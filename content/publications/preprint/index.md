@@ -1,7 +1,8 @@
 ---
-title: "An example preprint / working paper"
+title: "Variational Shape Inference for Grasp Diffusion on SE(3)"
 authors:
 - admin
+- "P2"
 date: "2019-04-07T00:00:00Z"
 
 # Schedule page publish date (NOT publication's date).
@@ -72,10 +73,3 @@ projects:
 #   Otherwise, set `slides: ""`.
 slides: ""
 ---
-
-This work is driven by the results in my [previous paper](/publications/conference-paper/) on LLMs.
-
-> [!NOTE]
-> Create your slides in Markdown - click the *Slides* button to check out the example.
-
-Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/).

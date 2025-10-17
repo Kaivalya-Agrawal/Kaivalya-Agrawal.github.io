@@ -16,12 +16,12 @@ sections:
       text: ''
       # Show a call-to-action button under your biography? (optional)
       headings:
-        about: ''
+        about: 'About Me'
         education: ''
         interests: ''
     design:
       # Apply a gradient background
-      css_class: hbx-bg-gradient
+      css_class: blue
       # Avatar customization
       avatar:
         size: medium # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
@@ -37,16 +37,17 @@ sections:
           - publications
         featured_only: false
     design:
-      view: article-grid
-      columns: 2
-  - block: collection
-    content:
-      title: Recent Media
-      text: ''
-      filters:
-        folders:
-          - publications
-        exclude_featured: false
-    design:
       view: citation
+      columns: 1
+      css_class: 'papers-horizontal'
+  # - block: collection
+  #   content:
+  #     title: Recent Media
+  #     text: ''
+  #     filters:
+  #       folders:
+  #         - publications
+  #       exclude_featured: false
+  #   design:
+  #     view: citation
 ---
