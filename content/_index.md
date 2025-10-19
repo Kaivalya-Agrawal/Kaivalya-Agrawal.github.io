@@ -37,9 +37,9 @@ sections:
           - publications
         featured_only: false
     design:
-      view: citation
       columns: 1
-      css_class: 'papers-horizontal'
+      view: community/compact
+      
   # - block: collection
   #   content:
   #     title: Recent Media

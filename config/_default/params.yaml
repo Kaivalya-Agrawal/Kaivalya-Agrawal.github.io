@@ -8,6 +8,7 @@ appearance:
   mode: light
   color: blue
 
+
 # SEO
 marketing:
   seo:
@@ -58,3 +59,7 @@ features:
     enable: false
   privacy_pack:
     enable: false
+
+assets:
+  css:
+    - css/custom.css

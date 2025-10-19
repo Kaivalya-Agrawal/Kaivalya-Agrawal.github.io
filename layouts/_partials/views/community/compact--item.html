@@ -1,0 +1,43 @@
+{{- $p := .item -}}
+<article class="flex items-start gap-4">
+  {{- $img := "" -}}
+  {{- with $p.Params.image }}
+    {{- $img = . -}}
+  {{- end -}}
+  {{- with $p.Params.featured_image }}
+    {{- $img = . -}}
+  {{- end -}}
+
+  {{- with $img }}
+    <div class="shrink-0 w-24 h-24 overflow-hidden rounded">
+      <img src="{{ . | relURL }}" alt="{{ $p.Title }}" class="w-full h-full object-cover">
+    </div>
+  {{- end }}
+
+  <div class="min-w-0">
+    <!-- Title not hyperlinked -->
+    <h3 class="text-lg font-semibold leading-snug">{{ $p.Title }}</h3>
+
+    {{ with $p.Params.subtitle }}
+      <p class="text-sm opacity-80">{{ . }}</p>
+    {{ end }}
+
+    {{ with $p.Summary }}
+      <p class="text-sm opacity-70 line-clamp-2">{{ . }}</p>
+    {{ end }}
+
+    <!-- Optional: render first preprint/video link chips -->
+    {{- $links := $p.Params.links | default (slice) -}}
+    {{- if gt (len $links) 0 }}
+      <div class="mt-2 flex flex-wrap gap-2 text-sm">
+        {{- range $links }}
+          {{- if and (eq .type "preprint") (eq .provider "arxiv") (isset . "id") }}
+            <a class="underline" href="https://arxiv.org/abs/{{ .id }}" target="_blank" rel="noopener">arXiv</a>
+          {{- else if and (eq .type "video") (isset . "url") }}
+            <a class="underline" href="{{ .url }}" target="_blank" rel="noopener">Video</a>
+          {{- end }}
+        {{- end }}
+      </div>
+    {{- end }}
+  </div>
+</article>
