@@ -8,7 +8,7 @@ authors:
 
 date: "2019-04-07T00:00:00Z"
 
-status: "Under review"
+status: "IEEE Robotics and Automation Letters (RA-L)"
 venue: "2025"
 
 # Schedule page publish date (NOT publication's date).
