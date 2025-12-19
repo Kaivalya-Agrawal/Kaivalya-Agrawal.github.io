@@ -28,15 +28,16 @@ featured: false
 links:
 - type: preprint
   provider: arxiv
-  id: 2508.17482v1
-# - type: code
-#   url: https://github.com/HugoBlox/hugo-blox-builder
+  id: 2508.17482v2
+- type: video
+  url: https://youtu.be/YyJPZQgEErM
+- type: code
+  url: https://github.com/stalhabukhari/vsigd
 # - type: poster
 #   url: "#"
 # - type: source
 #   url: "#"
-# - type: video
-#   url: https://youtube.com
+
 # - type: custom
 #   label: Custom Link
 #   url: http://example.org

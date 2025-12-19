@@ -41,6 +41,9 @@ profiles:
     url: https://github.com/Kaivalya-Agrawal
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/kaivalya-agrawal-682996211/
+  - icon: brands/google-scholar
+    url: https://scholar.google.com/citations?user=dPBA_2cAAAAJ&hl=en
+    label: Google Scholar
     
 
 

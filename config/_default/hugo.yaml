@@ -53,3 +53,7 @@ security:
   _merge: deep
 sitemap:
   _merge: deep
+
+params:
+  site_icon: "new-icon.png"
+# Trigger rebuild
