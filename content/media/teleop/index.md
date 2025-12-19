@@ -1,12 +1,21 @@
 ---
-title: Teleop
-date: 2023-10-26
-links:
-  - type: site
-    url: https://github.com/pytorch/pytorch
+title: Teleoperation
+
+share: false
+profile: false
+commentable: false
+show_related: false
+show_breadcrumb: false
+reading_time: false
+show_date: false
+pager: false
 
 ---
 
-Low latency, smooth teleop for data collection and real-time robot control.
+Low latency, smooth teleoperation for data collection and real-time robot control using scaled robot embodiments.
 
-<!--more-->
+## Demonstration Videos
+
+Block Stacking
+{{< youtube NWAcrf1pR6w >}}
+

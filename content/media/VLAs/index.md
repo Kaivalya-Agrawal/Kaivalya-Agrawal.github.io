@@ -1,12 +1,17 @@
 ---
 title: VLAs
-date: 2023-10-26
-links:
-  - type: site
-    url: https://github.com/scikit-learn/scikit-learn
+
+share: false
+profile: false
+commentable: false
+show_related: false
+show_breadcrumb: false
+reading_time: false
+show_date: false
+pager: false
 
 ---
 
+Vision Language Action synthesis models for prompt and image guided task execution.
 
 
-<!--more-->
