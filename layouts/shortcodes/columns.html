@@ -1,0 +1,8 @@
+{{ $content := split .Inner "<--->" }}
+<div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start; width: 100%;">
+  {{ range $content }}
+    <div style="flex: 1; min-width: 300px; max-width: 100%;">
+      {{ . | markdownify }}
+    </div>
+  {{ end }}
+</div>

@@ -12,7 +12,7 @@ sections:
   - block: collection
     content:
       title: Media
-      text: Videos and Interactive Demos.
+      text: Videos and Interactive Demos
       filters:
         folders:
           - media

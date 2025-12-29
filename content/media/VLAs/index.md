@@ -14,4 +14,12 @@ pager: false
 
 Vision Language Action synthesis models for prompt and image guided task execution.
 
+## Fine Tuned PI0 for Block Picking
 
+
+
+{{< youtube AavNC1JzzlI >}}
+
+---
+
+{{< youtube XT8s7W49b0c >}}

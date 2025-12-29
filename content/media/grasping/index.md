@@ -13,19 +13,38 @@ pager: false
 
 Implicit geometry-aware grasp synthesis guided by diffusion.
 
-<!--more-->
-
 ## Demonstration Videos
 
-{{< youtube id="VIDEO_ID_HERE" >}}
-<!-- Replace VIDEO_ID_HERE with the ID from your YouTube URL (e.g. w7Ft2ymGmfc) -->
+{{< youtube YyJPZQgEErM >}}
 
-## Interactive Grasping
+## Grasp Examples
 
-Enter your detailed project description here. You can explain the "diffusion based grasping" technique, how object segmentation was performed, and what the results were.
+#### Grasps on a Jug
 
-## Gallery
+{{< columns >}}
+{{< viser file="grasping_demo_v3.viser" >}}
 
-<!-- Example image handling -->
-![Example Image](/media/icon.png)
-*Figure 1: System Architecture (Replace this image)*
+<--->
+
+{{< viser file="grasping_demo_v3.viser" >}}
+{{< /columns >}}
+
+#### Grasps on a Book
+
+{{< columns >}}
+{{< youtube YyJPZQgEErM >}}
+
+<--->
+
+{{< viser file="grasping_demo_v3.viser" >}}
+{{< /columns >}}
+
+#### Grasps on a Klein Bottle
+
+{{< columns >}}
+{{< youtube YyJPZQgEErM >}}
+
+<--->
+
+{{< viser file="grasping_demo_v3.viser" >}}
+{{< /columns >}}

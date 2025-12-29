@@ -55,5 +55,5 @@ sitemap:
   _merge: deep
 
 params:
-  site_icon: "icon.png"
+  site_icon: "img/icon.png"
 # Trigger rebuild
