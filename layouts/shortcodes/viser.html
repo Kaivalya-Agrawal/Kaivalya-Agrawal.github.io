@@ -1,15 +1,27 @@
-<!-- <div class="viser-container" style="position: relative; width: 100%; height: 500px; margin: 20px 0;">
-    <iframe 
-        src="/viser-viewer/?playbackPath=/recordings/{{ .Get "file" | safeURL }}" 
-        width="100%" 
-        height="100%"
-        style="border: none; border-radius: 8px;">
-    </iframe>
-</div> -->
+<div class="viser-container" style="position: relative; width: 100%; height: 500px; margin: 20px 0; border: 1px solid #eee; border-radius: 8px; overflow: hidden;">
+    {{- $file := .Get "file" -}}
+    {{- $pos := .Get "pos" -}}
+    {{- $look := .Get "look" -}}
+    
+    {{/* Construct the base URL */}}
+    {{- $url := printf "/viser-viewer/index.html?playbackPath=/recordings/%s" $file -}}
+    
+    {{/* Append camera position if provided, otherwise use a hardcoded fallback */}}
+    {{- if $pos -}}
+        {{- $url = printf "%s&initialCameraPosition=%s" $url $pos -}}
+    {{- else -}}
+        {{- $url = printf "%s&initialCameraPosition=2.0,2.0,2.0" $url -}}
+    {{- end -}}
+    
+    {{/* Append look-at if provided */}}
+    {{- if $look -}}
+        {{- $url = printf "%s&initialCameraLookAt=%s" $url $look -}}
+    {{- else -}}
+        {{- $url = printf "%s&initialCameraLookAt=0.0,0.0,0.5" $url -}}
+    {{- end -}}
 
-<div class="viser-container" style="position: relative; width: 100%; height: 500px; margin: 20px 0; border: 1px solid #ddd; border-radius: 8px; overflow: hidden;">
     <iframe 
-        src="/viser-viewer/index.html?playbackPath=/recordings/{{ .Get "file" }}" 
+        src="{{ $url | relURL }}" 
         width="100%" 
         height="100%"
         style="border: none;">
