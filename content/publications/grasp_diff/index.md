@@ -26,6 +26,9 @@ publication_short: ""
 featured: false
 
 links:
+- type: custom
+  label: Paper
+  url: https://ieeexplore.ieee.org/document/11302796/
 - type: preprint
   provider: arxiv
   id: 2508.17482v2

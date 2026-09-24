@@ -33,18 +33,19 @@
       <h3 class="text-2xl font-semibold leading-snug">{{ $p.Title }}</h3>
 
       {{ with $p.Params.authors }}
-        {{- $list := slice -}}
-        {{- range . -}}
-          {{- $slug := . -}}
-          {{- $pg := site.GetPage (printf "authors/%s" $slug) -}}
-          {{- if $pg -}}
-            {{- $name := $pg.Params.name | default $pg.Title | default $slug -}}
-            {{- $list = $list | append $name -}}
-          {{- else -}}
-            {{- $list = $list | append $slug -}}
+        {{/* Bold authors whose profile sets `highlight_name: true` (i.e. me). */}}
+        <p class="text-base opacity-85 mt-1">
+          {{- range $i, $slug := . -}}
+            {{- if $i }}, {{ end -}}
+            {{- $name := $slug -}}
+            {{- $bold := false -}}
+            {{- with site.GetPage (printf "authors/%s" $slug) -}}
+              {{- $name = .Params.name | default .Title | default $slug -}}
+              {{- $bold = .Params.highlight_name | default false -}}
+            {{- end -}}
+            {{- if $bold }}<strong>{{ $name }}</strong>{{ else }}{{ $name }}{{ end -}}
           {{- end -}}
-        {{- end -}}
-        <p class="text-base opacity-85 mt-1">{{ delimit $list ", " }}</p>
+        </p>
       {{ end }}
 
       {{- $venue := $p.Params.venue | default $p.Params.publication | default "" -}}
