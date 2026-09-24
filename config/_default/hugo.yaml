@@ -54,6 +54,4 @@ security:
 sitemap:
   _merge: deep
 
-params:
-  site_icon: "img/icon.png"
 # Trigger rebuild

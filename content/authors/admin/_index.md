@@ -59,4 +59,4 @@ education:
 
 ---
 
-Hi! My name is Kaivalya Agrawal and I’m an undergraduate student in my senior year at Purdue University. My research interests are in robot motion planning, controls and robot learning. I am an undergraduate researcher at the CoMMA Lab advised by Dr. Zachary Kingston. 
+Hi! My name is Kaivalya Agrawal and I’m a masters student in my final year at Purdue University. My research interests are in robot motion planning, controls and robot learning. I am a masters researcher at the CoMMA Lab advised by Dr. Zachary Kingston. 

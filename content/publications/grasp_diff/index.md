@@ -6,7 +6,7 @@ authors:
 - "Zachary Kingston"
 - "Aniket Bera"
 
-date: "2019-04-07T00:00:00Z"
+date: "2025-08-01T00:00:00Z"
 
 status: "IEEE Robotics and Automation Letters (RA-L)"
 venue: "2025"
